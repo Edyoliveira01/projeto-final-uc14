@@ -1,0 +1,139 @@
+
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Azul escuro tech */
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background: #2a0236;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: rgba(175, 1, 105) , rgba(0,0,0,0.6);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8; /* Azul claro ao passar o mouse */
+}
+
+/* Seção Hero */
+.hero {
+    height: 400px;
+    background: linear-gradient(rgba(175, 2, 255, 0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    background-color: #38bdf8;
+    color: #004af7;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #2701fd;
+    transform: scale(1.05); /* Efeito de zoom leve */
+}
+
+/* Cards com Flexbox ou Grid */
+.grid-cards, .grid-palestrantes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card, .perfil {
+    background: #630263;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #334155;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background: #100217;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+h1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+hr { 
+    margin: 40px 0;
+
+}
+img, video, audio, picture{
+    margin: 15px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
