@@ -22,7 +22,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: #2a0236;
+    background:#2a0236;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    color:#100217;
 }
+header a {
+    color: #003366; /* azul escuro */
+  }
 
 nav ul {
     list-style: none;
